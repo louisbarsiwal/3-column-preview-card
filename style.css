@@ -22,7 +22,6 @@ body {
   background-color: hsl(0, 0%, 95%);
 }
 
-
 /* *************BOX CONTAINER**************** */
 .container {
   display: flexbox;
@@ -60,16 +59,25 @@ body {
   line-height: 24px;
 }
 
-/* *************"LEARN MORE" BUTTON  */
+/* *************"LEARN MORE" BUTTON***************  */
 .container .card button {
   background-color: hsl(0, 0%, 95%);
   border: 0;
   margin: 27px 2px 2px 0px;
   padding: 16px 35px;
   font-family: "Lexend Deca", sans-serif;
-  cursor: pointer;
   border-radius: 82px;
   font-size: 15px;
+}
+
+#button1 {
+  color: hsl(31, 77%, 52%);
+}
+#button2 {
+  color: hsl(184, 100%, 22%);
+}
+#button3 {
+  color: hsl(179, 100%, 13%);
 }
 
 /* *************EACH CARD INDIVIDUALLY*********** */
@@ -110,24 +118,20 @@ body {
   color: hsl(180, 72%, 45%);
 }
 
-
 /* **************RESPONSIVNESS************ */
 @media (min-width: 766px) {
-  
   .container {
     display: -webkit-inline-box;
     margin: 10% 3.5%;
     border-radius: 8px;
-
   }
-    
+
   .container .card {
     padding: 0% 6% 0px 6%;
     width: 33.3%;
     margin-right: 0;
-    
   }
-  
+
   .container .card img {
     margin: 36px 0px 26px 0px;
     width: 48px;
@@ -137,40 +141,35 @@ body {
     font-size: 33px;
     margin: 0px 0px 21px 0px;
   }
-  
+
   .container .card p {
     font-size: 11px;
     line-height: 19px;
   }
-  
+
   .container .card button {
-    background-color: transparent;
     border: 1.5px hsl(0, 0%, 95%) solid;
     margin: 58px 2px 30px 2px;
     padding: 10px 21px;
     cursor: pointer;
     border-radius: 136px;
     font-size: 11px;
+  }
+
+  /* ***************BUTTON HOVER ANIMATION**************** */
+  #button1:hover {
+    background-color: transparent;
     color: hsl(0, 0%, 95%);
   }
-  
-  /* ***************BUTTON HOVER ANIMATION**************** */
-  #button1:hover{
-    background-color: hsl(0, 0%, 95%);
-    color:hsl(31, 77%, 52%) ;
-    
+  #button2:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
   }
-  #button2:hover{
-    background-color: hsl(0, 0%, 95%);
-    color:hsl(184, 100%, 22%) ;
-    
+  #button3:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
   }
-  #button3:hover{
-    background-color: hsl(0, 0%, 95%);
-    color:hsl(179, 100%, 13%) ;
-    
-  }
-  
+
   #card1 {
     background-color: hsl(31, 77%, 52%);
     color: white;
@@ -178,7 +177,7 @@ body {
     border-bottom-left-radius: 8px;
     border-top-right-radius: 0px;
   }
-  
+
   #card2 {
     background-color: hsl(184, 100%, 22%);
     color: white;
@@ -194,38 +193,27 @@ body {
 
   .attribution {
     margin-bottom: 1px;
-    
   }
 }
-
 
 /* ***********RESPONSIVNESS FOR WIDTH-992PX*********** */
 
 @media (min-width: 992px) {
-  
   .container {
     display: -webkit-inline-box;
     margin: 8% 21.5%;
     border-radius: 8px;
-
   }
   #card3 {
     padding-right: 38px;
   }
 
   .container .card button {
-    background-color: transparent;
-    border: 1.5px hsl(0, 0%, 95%) solid;
     margin: 58px 2px 31px 0px;
     padding: 9px 21px;
-    cursor: pointer;
-    border-radius: 136px;
-    font-size: 11px;
-    color: hsl(0, 0%, 95%);
   }
 
   .container .card h1 {
     font-size: 29px;
   }
 }
-
